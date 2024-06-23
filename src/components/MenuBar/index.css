@@ -1,0 +1,23 @@
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: blueviolet;
+    border-radius: 10px;
+}
+
+.menu li {
+    float:  right;
+}
+
+.menu li a {
+    display: block;
+    color: pink;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.menu {
+    padding-top: 10px;
+}
