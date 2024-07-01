@@ -7,13 +7,13 @@ const Menubar: FC = () => {
         <div className="menu">
             <ul>
                 <li><a href="/home">Produtos</a></li>
-                <li><a href="/sobre">Sobre</a></li>
+                <li><a href="/PROMOCOES">Promoções</a></li>
                 <li><a href="/ORGANIZACAO">Organização</a></li>
                 <li><a href="/ESCRITA">Escrita</a></li>
                 <li><a href="/CADERNOS">Cadernos</a></li>
                 <li><a href="/PRESENTES">Presentes</a></li>
                 <li><a href="/TEMATICO">Temático</a></li>
-                <li><a href="/PROMOCOES">Promoções</a></li>
+                <li><a href="/sobre">Sobre</a></li>
             </ul>
         </div>
     </>

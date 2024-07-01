@@ -1,0 +1,25 @@
+/* src/Sobre.css */
+.sobre-container {
+    background-color: #ffdab9; /* Fundo laranja claro */
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 600px;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sobre-container h1 {
+    color: #ff4500; /* Laranja mais forte */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    font-size: 2.5em;
+  }
+  
+  .sobre-container p {
+    color: #ff6347; /* Tom de laranja intermediário */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
