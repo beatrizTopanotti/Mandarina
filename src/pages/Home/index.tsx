@@ -18,7 +18,7 @@ const Home: FC = () => {
 
         let url = "/produtos/";
 
-        if(categoria) {
+        if (categoria) {
             url = `/produtos/categoria/${categoria}`;
         }
 
@@ -36,7 +36,7 @@ const Home: FC = () => {
     }, []);
 
     const redirecionarDetalhesProduto = (idProduto: number) => {
-        if(idProduto) {
+        if (idProduto) {
             window.location.href = `/produtos/detalhes/${idProduto}`;
         }
     }
@@ -54,16 +54,14 @@ const Home: FC = () => {
                                 <p>{produto.nome} </p>
                             </div>
                             <div className="produto_preco">
-                                <p>R${produto.preco
-                                    
-                                    }</p>
+                                <p>R${produto.preco}</p>
                             </div>
                             <div>
-                            <BotaoPadrao
-                                label="Comprar"
-                                onClick={() => {
-                                    redirecionarDetalhesProduto(produto.id);
-                                }}
+                                <BotaoPadrao
+                                    label="Comprar"
+                                    onClick={() => {
+                                        redirecionarDetalhesProduto(produto.id);
+                                    }}
                                 />
                             </div>
                         </div>
