@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+* {
+  padding: .1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
+  color: pink;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.body {
+  max-width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.corpo {
+  max-width: 100%;
+  width: 90%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo {
+  width: 6rem;
+  border-radius: 5rem;
+}
+
+.cabecalho {
+  padding-bottom: 2%;
+}
+
+.cabecalho-corpo {
+  display: flex;
+  padding: .6rem;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-list {
+  flex: 1;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.item-carrinho {
+  width: 20%;
+  padding-right: 20px;
+}
+
+.item-carrinho a {
+  float: right;
+}
+
+.item-usuario {
+  width: 20%;
+}
+
+.item-usuario a {
+  float: right;
+}
+
+.router {
+  display: flex;
+  height: 100vh;
+}
+
+.footer {
+  margin-top: 2.6rem;
+  display: flex;
+  justify-content: center;
+  background-color: blueviolet;
+  color: pink;
+  padding: 1rem;
+  border-radius: 10px;
 }

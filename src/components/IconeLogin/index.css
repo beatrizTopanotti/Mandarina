@@ -1,0 +1,22 @@
+.container-login {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: .6rem;
+}
+
+.container-login:hover {
+    background-color: #ffdab9;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.container-login:hover .texto-login {
+    color: blueviolet;
+    transition: 0.5s;
+}
+
+.texto-login {
+    font-size: 12px;
+    color: blueviolet;
+}

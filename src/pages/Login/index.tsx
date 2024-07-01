@@ -8,10 +8,14 @@ import { addClienteStore } from "../../store/ClienteStore/clienteStore";
 
 interface LoginProperties {
     onClose: () => void,
-    onLogin: (cliente: IClienteStore) => void;
+    onLogin: (cliente: IClienteStore) => void; /*função não opcional, tem que ser declarada na tag */
 }
 
-const Login: FC<LoginProperties> = ({ onClose, onLogin }) => {
+const Login: FC<LoginProperties> = ({
+    onClose,
+    onLogin,
+}) => {
+
     const [tipoSenha, setTipoSenha] = useState<Boolean>(false)
     const [email, setEmail] = useState<String>();
     const [senha, setSenha] = useState<String>();
@@ -21,6 +25,7 @@ const Login: FC<LoginProperties> = ({ onClose, onLogin }) => {
     }
 
     const autenticarCliente = async () => {
+
         const data = {
             email: email,
             senha: senha,
@@ -39,7 +44,7 @@ const Login: FC<LoginProperties> = ({ onClose, onLogin }) => {
             
             addClienteStore(cliente);
             onLogin(cliente);
-
+            
             return;
         }
 
@@ -105,5 +110,4 @@ const Login: FC<LoginProperties> = ({ onClose, onLogin }) => {
         </div>
     </>
 }
-
 export default Login;

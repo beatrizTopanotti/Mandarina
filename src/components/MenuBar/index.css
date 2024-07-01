@@ -1,23 +1,28 @@
-.menu ul {
-    list-style-type: none;
-    margin: 0;
-    overflow: hidden;
-    background-color: blueviolet;
-    border-radius: 10px;
+.menu {
+    padding-top: 10px;
 }
 
-.menu li {
-    float:  right;
+.menu ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+    padding: .6rem;
+    border-radius: 10px;
 }
 
 .menu li a {
     display: block;
-    color: pink;
+    color: #ffdab9;
     text-decoration: none;
     text-align: center;
     padding: 14px 16px;
 }
 
-.menu {
-    padding-top: 10px;
+.menu li a:hover {
+    background-color: #ffdab9;
+    color: blueviolet;
+    border-radius: 10px;
+    transition: 0.5s;
 }

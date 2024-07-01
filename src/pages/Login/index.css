@@ -1,0 +1,14 @@
+.div-login {
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+}
+
+.div-login-linha {
+    padding-bottom: 10px;
+}
+
+.div-login-linha p {
+    font-size: 10px;
+    text-align: center;
+}
