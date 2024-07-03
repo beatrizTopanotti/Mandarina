@@ -1,0 +1,9 @@
+.carrinho {
+    cursor: pointer;
+}
+
+.carrinho:hover {
+    background-color: #ffdab9;
+    border-radius: 10px;
+    transition: 0.5s;
+}

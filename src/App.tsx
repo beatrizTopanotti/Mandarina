@@ -11,7 +11,7 @@ function App() {
     <div className="body">
       <div className="corpo">
         <header className="cabecalho">
-          <div className="logo">
+          <div className="cabecalho-corpo">
             <img src={logo} alt="Logo"/>
             <div className="item-usuario">
               <IconeLogin/>
