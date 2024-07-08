@@ -1,6 +1,8 @@
 import axios, { Axios } from "axios";
 
-const api = new Axios({baseURL: "http://localhost:8080/" });
+const api = new Axios({baseURL: "https://mandarinaapi.onrender.com" });
+// deployed host: https://mandarinaapi.onrender.com
+// local: http://localhost:8080
 
 export interface IDataResponse {
     status: number;
@@ -27,14 +29,10 @@ export enum STATUS_CODE {
 
 export const apiGet = async (url: string) : Promise<IDataResponse> => {
 
-
-    // essa validaçõa é feita mais para erros de conexão
-    // se for um erro de lógica vai cair no trycatch do back-end
     try {
         const response: AxiosResponse = await api.get(url);
-    // await é uma função feita para esperar a função retornar para assim passar para o próximo
-    // evita consumo de memória 
 
+        console.log(response);
         if(response === undefined) {
             return {
                 status: STATUS_CODE.INTERNAL_SERVER_ERROR,

@@ -17,9 +17,9 @@ export const addCarrinho = (item: ICarrinhoStore) => {
         carrinho.push(item)
     }
 
-    carrinho.push(item);
-
     addCarrinhoStore(carrinho);
+
+    return carrinho;
 
 }
 
@@ -30,10 +30,23 @@ export const carregarCarrinho = (): ICarrinhoStore[] => {
 }
 
 const addCarrinhoStore = (carrinho: ICarrinhoStore[]) => {
-    localStorage.setItem("carrinho", JSON.stringify(carrinho))
+    localStorage.setItem(CARRINHO_STORE, JSON.stringify(carrinho))
 }
 
 export const obterQuantidadeCarrinho = (): number => {
     const carrinho: ICarrinhoStore[] = carregarCarrinho();
     return carrinho.length;
+}
+
+export const removerItemCarrinho = (id: number): ICarrinhoStore[] => {
+    const carrinho = carregarCarrinho();
+
+    const indexCarrinho = carrinho.findIndex((c:ICarrinhoStore) => c.id === id);
+    if(indexCarrinho > -1){
+        carrinho.splice(indexCarrinho, 1);
+    }
+
+    addCarrinhoStore(carrinho);
+
+    return carrinho;
 }

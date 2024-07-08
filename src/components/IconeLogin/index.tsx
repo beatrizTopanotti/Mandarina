@@ -1,15 +1,22 @@
 import { PersonOutline } from "@mui/icons-material";
-import { FC, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import "./index.css";
 import Login from "../Login";
 import { Popover } from "@mui/material";
 import { IClienteStore } from "../../store/ClienteStore/types";
-import { obterCliente } from "../../store/ClienteStore/clienteStore";
+import { getClienteStore, obterCliente } from "../../store/ClienteStore/clienteStore";
 
 const IconeLogin: FC = () => {
     const [openPopover, setOpenPopover] = useState<boolean>(false);
     const [ancoraPopover, setAncoraPopover] = useState<HTMLDivElement | null>(null);
     const [clienteStore, setClienteStore] = useState<IClienteStore>(obterCliente());
+
+    useEffect(() => {
+        const storedCliente =  getClienteStore();
+        if(storedCliente) {
+            setClienteStore(storedCliente);
+        }
+    }, []);
 
     const onClickLogin = (evento: React.MouseEvent<HTMLDivElement>) => {
         setOpenPopover((openPopover) => !openPopover);
@@ -55,7 +62,3 @@ const IconeLogin: FC = () => {
 }
 
 export default IconeLogin;
-
-function setOpenPopover(arg0: boolean) {
-    throw new Error("Function not implemented.");
-}

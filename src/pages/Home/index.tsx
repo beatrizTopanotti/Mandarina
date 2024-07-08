@@ -27,6 +27,7 @@ const Home: FC = () => {
         if (response.status === STATUS_CODE.OK) {
             console.log(response);
             setProdutos(response.data);
+            console.log("aquiii ", response);
         }
     }
 

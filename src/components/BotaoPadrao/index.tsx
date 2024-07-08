@@ -1,4 +1,5 @@
 import { FC } from "react";
+import './index.css';
 
 interface BotaoPadraoProperties {
     label: string;
@@ -10,7 +11,7 @@ const BotaoPadrao: FC<BotaoPadraoProperties> = ({
     onClick,
 }) => {
     return<>
-        <div className=" ">
+        <div className="container-botao">
             <button
             onClick={onClick}>
                 {label}

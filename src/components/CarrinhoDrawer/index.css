@@ -1,0 +1,26 @@
+.carrinho {
+    display: flex;
+    align-items: center;
+    cursor: pointer; 
+}
+.carrinho:hover {
+    background-color: #ffdab9;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.tamanho-paper-drawer {
+    width: 600px;
+}
+
+.box-imagem {
+    min-width: 60px;
+    max-width: 60px;
+}
+
+.imagem {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}

@@ -1,0 +1,47 @@
+.finalizar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    width: 100%;
+}
+
+.itens-carrinho {
+    margin-top: 20px;
+    width: 60%;
+}
+
+.tabela-carrinho {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabela-carrinho th, .tabela-carrinho td {
+    padding: 10px;
+    text-align: left;
+}
+
+.tabela-carrinho th {
+    border-bottom: 2px solid #ccc;
+}
+
+.tabela-carrinho td {
+    border-bottom: 1px solid #ccc;
+}
+
+.resumo-compra {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    width: 35%;
+    margin-left: 20px;
+}
+
+.resumo-compra h2 {
+    border-bottom: 1px solid #ccc;
+}
+
+img {
+    width: 40%;
+}

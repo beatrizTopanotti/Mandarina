@@ -6,6 +6,7 @@ import InputQuantidade from "../../components/InputQuantidade";
 import { ICarrinhoStore } from "../../store/CarrinhoStore/types";
 import { addCarrinho, carregarCarrinho } from "../../store/CarrinhoStore/carrinhoStore";
 import { STATUS_CODE, apiGet } from "../../api/restClient";
+import './index.css';
 
 const ProdutosDetalhes: FC = () => {
 
@@ -33,21 +34,21 @@ const ProdutosDetalhes: FC = () => {
     }, []);
 
     return <>
-        <div className=" ">
-            <div className=" ">
-                <div className=" ">
+        <div className="container-produto">
+            <div className="produto-detalhe">
+                <div className="imagem-produto">
                     <img src={produto?.imagemGrande} />
                 </div>
-                <div className=" ">
-                    <div className=" ">{produto?.nome}</div>
+                <div className="dados-produto">
+                    <div className="nome-produto">{produto?.nome}</div>
                     <hr />
-                    <div className=" ">
+                    <div className="codigo-produto">
                         {`codigo de produto: ${produto?.codigoProduto}`}
                     </div>
-                    <div className=" ">
+                    <div className="preco-produto">
                         {`preço: ${produto?.preco}`}
                     </div>
-                    <div className=" ">
+                    <div className="botao-produto">
                         <InputQuantidade
                             quantidade={quantidadeProduto || 0}
                             onChange={(quantidade: number) => {
