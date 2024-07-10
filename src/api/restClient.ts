@@ -1,6 +1,6 @@
 import axios, { Axios } from "axios";
 
-const api = new Axios({baseURL: "https://mandarinaapi.onrender.com" });
+const api = new Axios({baseURL: process.env.REACT_APP_API_BASE_URL });
 // deployed host: https://mandarinaapi.onrender.com
 // local: http://localhost:8080
 

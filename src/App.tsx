@@ -17,19 +17,19 @@ function App() {
           <div className="cabecalho-corpo">
             <img className="logo" src={logo} alt="Logo" />
             <div className="item-usuario">
-              <IconeLogin/>
-              </div>
+              <IconeLogin />
+            </div>
             <div className="item-carrinho">
-              <CarrinhoDrawer/>
+              <CarrinhoDrawer />
             </div>
           </div>
-          <MenuBar/>
+          <MenuBar />
         </header>
         <div className='router'>
-        <Router/>          
+          <Router />
         </div>
         <footer className='footer'>
-        <p>com muito café e reza braba, saiu alguma coisa... por biabia</p>
+          <p>com muito café e reza braba, saiu alguma coisa... por biabia</p>
         </footer>
       </div>
     </div>
